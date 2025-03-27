@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		CED3FC992D9381EB00BBF77C /* HaishinKit in Frameworks */ = {isa = PBXBuildFile; productRef = CED3FC982D9381EB00BBF77C /* HaishinKit */; };
+		CED3FC9B2D9381EB00BBF77C /* MoQTHaishinKit in Frameworks */ = {isa = PBXBuildFile; productRef = CED3FC9A2D9381EB00BBF77C /* MoQTHaishinKit */; };
+		CED3FC9D2D9381EB00BBF77C /* SRTHaishinKit in Frameworks */ = {isa = PBXBuildFile; productRef = CED3FC9C2D9381EB00BBF77C /* SRTHaishinKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		CED3FC7F2D937DF300BBF77C /* LowLotencyStreamViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LowLotencyStreamViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +42,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED3FC992D9381EB00BBF77C /* HaishinKit in Frameworks */,
+				CED3FC9B2D9381EB00BBF77C /* MoQTHaishinKit in Frameworks */,
+				CED3FC9D2D9381EB00BBF77C /* SRTHaishinKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +87,9 @@
 			);
 			name = LowLotencyStreamViewer;
 			packageProductDependencies = (
+				CED3FC982D9381EB00BBF77C /* HaishinKit */,
+				CED3FC9A2D9381EB00BBF77C /* MoQTHaishinKit */,
+				CED3FC9C2D9381EB00BBF77C /* SRTHaishinKit */,
 			);
 			productName = LowLotencyStreamViewer;
 			productReference = CED3FC7F2D937DF300BBF77C /* LowLotencyStreamViewer.app */;
@@ -95,6 +107,7 @@
 				TargetAttributes = {
 					CED3FC7E2D937DF300BBF77C = {
 						CreatedOnToolsVersion = 16.2;
+						LastSwiftMigration = 1620;
 					};
 				};
 			};
@@ -107,6 +120,9 @@
 			);
 			mainGroup = CED3FC762D937DF300BBF77C;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				CED3FC972D9381EB00BBF77C /* XCRemoteSwiftPackageReference "HaishinKit.swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = CED3FC802D937DF300BBF77C /* Products */;
 			projectDirPath = "";
@@ -143,6 +159,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XV38VT3FG5;
@@ -152,6 +169,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -164,6 +182,8 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -174,6 +194,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XV38VT3FG5;
@@ -183,6 +204,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -195,6 +217,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -341,6 +364,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CED3FC972D9381EB00BBF77C /* XCRemoteSwiftPackageReference "HaishinKit.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/HaishinKit/HaishinKit.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CED3FC982D9381EB00BBF77C /* HaishinKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CED3FC972D9381EB00BBF77C /* XCRemoteSwiftPackageReference "HaishinKit.swift" */;
+			productName = HaishinKit;
+		};
+		CED3FC9A2D9381EB00BBF77C /* MoQTHaishinKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CED3FC972D9381EB00BBF77C /* XCRemoteSwiftPackageReference "HaishinKit.swift" */;
+			productName = MoQTHaishinKit;
+		};
+		CED3FC9C2D9381EB00BBF77C /* SRTHaishinKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CED3FC972D9381EB00BBF77C /* XCRemoteSwiftPackageReference "HaishinKit.swift" */;
+			productName = SRTHaishinKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CED3FC772D937DF300BBF77C /* Project object */;
 }
